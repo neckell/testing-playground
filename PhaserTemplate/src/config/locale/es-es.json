@@ -1,0 +1,8 @@
+{
+    "startMessage": "Help blue find his stuff",
+    "notebookExplain": "Follow the clues to find the object",
+    "clueExplain": "The object we looking for is ",
+    "successMessage": "Good! You found the object",
+    "errorMessage": "That's not it, lets see the clues again",
+    "finishMessage": "You find all the objects! Well done!"
+}

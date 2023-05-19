@@ -1,0 +1,5 @@
+@mixin linearGradient($startColor: white, $endColor: black){
+    background-color: $endColor;
+    background-image: linear-gradient(left, $startColor, $endColor);
+    background-repeat: repeat-x;
+}

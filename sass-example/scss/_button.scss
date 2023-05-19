@@ -1,0 +1,19 @@
+.header__button{
+    display: inline-block;
+    width: max-content;
+    height: max-content;
+    padding: 20px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+}
+
+.header__button--primary{
+    @extend .header__button;
+    background-color: green;
+}
+
+.header__button--secondary{
+    @extend .header__button;
+    background-color: pink;
+}

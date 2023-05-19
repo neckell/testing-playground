@@ -1,0 +1,293 @@
+<!-- <head>
+    <style>
+      #left {
+        float: left;
+        width: 30%;
+      }
+      #right {
+        float: right;
+        width: 30%;
+      }
+      aside, section {
+        padding: 2px;
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome!</h1>
+    </header>
+    <section id="left">
+      <h2>Content</h2>
+      <p>Good stuff</p>
+    </section>
+    <aside id="right">
+      <h2>Sidebar</h2>
+      <p>Links</p>
+    </aside>
+    <aside id="left">
+        <h2>Sidebar 2</h2>
+        <p>Links</p>
+      </aside>
+  </body> -->
+
+  <!-- Css shapes -->
+  <!-- <style>
+    .heart {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: pink;
+      height: 50px;
+      width: 50px;
+      transform: ;
+    }
+    .heart::after {
+      background-color: blue;
+      content: "";
+      border-radius: 25%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 0px;
+      left: 25px;
+    }
+    .heart::before {
+      content: ;
+      background-color: pink;
+      border-radius: 50%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: -25px;
+      left: 0px;
+    }
+  </style>
+  <div class="heart"></div> -->
+
+  <!-- Animations -->
+  <!-- <style>
+    div {
+      height: 40px;
+      width: 70%;
+      background: black;
+      margin: 50px auto;
+      border-radius: 5px;
+    }
+  
+    #rect {
+        animation-name: rainbow;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: revert;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes rainbow {
+        0% {
+            background-color: blue;
+        }
+
+        50% {
+            background-color: green;
+        }
+
+        100%{
+            background-color: yellow;
+        }
+    }
+  </style>
+  <div id="rect"></div> -->
+
+  <!-- Transitions -->
+<!-- 
+  <style>
+    #theButton{
+        width: 200px;
+        transition-property: width;
+        transition-duration: 2s;
+        transition-delay: 250ms;
+        transition-timing-function: cubic-bezier(0.9, 0.1, 0.1, 0.8);
+    }
+    #theButton:hover {
+        width: 300px;
+    }
+</style>
+<button id="theButton">Hover me!</button> -->
+
+<!-- Grids -->
+
+<!-- <style>
+  .d1{background:LightSkyBlue;}
+  .d2{background:LightSalmon;}
+  .d3{background:PaleTurquoise;justify-self: start;align-self: center;}
+  .d4{background:LightPink; grid-area: content;}
+  .d5{
+    background:PaleGreen;
+    grid-row: 2 / 4;
+    /* grid-area: 3/1/4/4; */
+  }
+
+  .container {
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+  
+    grid-template-columns: 1fr 100px 2fr;
+    grid-template-rows: 100px 100px 100px;
+    /* grid-template-columns: repeat(3,100px); */
+    /* grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); */
+    grid-column-gap: 10px;
+    grid-gap: 10px 20px;
+    
+    grid-template-areas:
+      "header header header"
+      ". content content"
+      "footer footer footer";
+
+  }
+</style>
+
+<div class="container">
+  <div class="d1">1</div>
+  <div class="d2">2</div>
+  <div class="d3">3</div>
+  <div class="d4">4</div>
+  <div class="d5">5</div>
+</div> -->
+
+<!-- Responsive design with grids -->
+<!-- 
+<style>
+  .item1 {
+    background: LightSkyBlue;
+    grid-area: header;
+  }
+
+  .item2 {
+    background: LightSalmon;
+    grid-area: advert;
+  }
+
+  .item3 {
+    background: PaleTurquoise;
+    grid-area: content;
+  }
+
+  .item4 {
+    background: lightpink;
+    grid-area: footer;
+  }
+
+  .container {
+    font-size: 1.5em;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "header"
+      "advert"
+      "content"
+      "footer";
+  }
+
+  @media (min-width: 300px){
+    .container{
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "advert header"
+        "advert content"
+        "advert footer";
+    }
+  }
+
+  @media (min-width: 400px){
+    .container{
+      grid-template-areas:
+      /* Only change code below this line */
+        "advert header"
+        "advert content"
+        "advert footer";
+      /* Only change code above this line */
+    }
+  }
+</style>
+
+<div class="container">
+  <div class="item1">header</div>
+  <div class="item2">advert</div>
+  <div class="item3">content</div>
+  <div class="item4">footer</div>
+</div> -->
+
+<!-- Grids wthin grids -->
+
+<!-- <style>
+  .container {
+    font-size: 1.5em;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "advert header"
+      "advert content"
+      "advert footer";
+  }
+  .item1 {
+    background: LightSkyBlue;
+    grid-area: header;
+  }
+
+  .item2 {
+    background: LightSalmon;
+    grid-area: advert;
+  }
+
+  .item3 {
+    background: PaleTurquoise;
+    grid-area: content;
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  .item4 {
+    background: lightpink;
+    grid-area: footer;
+  }
+
+  .itemOne {
+    background: PaleGreen;
+  }
+
+  .itemTwo {
+    background: BlanchedAlmond;
+  }
+
+</style>
+
+<div class="container">
+  <div class="item1">header</div>
+  <div class="item2">advert</div>
+  <div class="item3">
+    <div class="itemOne">paragraph1</div>
+    <div class="itemTwo">paragraph2</div>
+  </div>
+  <div class="item4">footer</div>
+</div> -->
+
+<script src="test.js"></script>
+
